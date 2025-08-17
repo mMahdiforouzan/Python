@@ -15,6 +15,7 @@ def exercise2():
     x=0
     x0=0
     for x in range(10):
-        print("Current number: %d Previous number: %d sum: %d"%(x0,x,x+x0))
+        print("Current number: %d Previous number: %d sum: %d"%(x,x0,x+x0))
+        x0=x
         x=x+1
-        x0=x0+1
+        
