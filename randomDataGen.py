@@ -23,7 +23,8 @@ def lottery(numberOfTickets,digitLength):
     init = random.sample(range(min,max),numberOfTickets)
     lotterySet = {*init}
     print (numbersInRange,len(lotterySet))
-
+    
+    i=0
     while(numberOfTickets>len(lotterySet) and len(lotterySet)<(numbersInRange) and i<100):
         numbers = random.sample(range(min,max),numberOfTickets-len(lotterySet))
         for x in range(len(numbers)-1):
