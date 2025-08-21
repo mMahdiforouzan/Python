@@ -1,4 +1,5 @@
 import beginnerExercises as beginnerExercises
+import randomDataGen as dataGen
 import random as random
 
 print("select which exercise")
@@ -39,6 +40,19 @@ match inputValue:
           print(beginnerExercises.exercise5(thisList))
         if inputValue == 6:
             beginnerExercises.exercise6(thisList)
-        
-    
-    
+
+     case 7:
+        print("enter min")
+        min = int(input())
+        print("enter max")
+        max = int(input())
+        print("enter how many random numbers you want")
+        n = int(input())
+        print("enter what you want all the numbers to be divisible by")
+        delta = int(input())
+        print(dataGen.randomIntN(min,max,n,delta))
+
+     case 8:
+        x = dataGen.lottery(100,10)
+        print(x)
+        print(random.sample(x,2))
