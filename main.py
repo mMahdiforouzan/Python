@@ -56,3 +56,16 @@ match inputValue:
         x = dataGen.lottery(100,10)
         print(x)
         print(random.sample(x,2))
+
+     case 9:
+      print(dataGen.OneTimePassword())
+     
+     case 10:
+      print("enter a string")
+      str = input()
+      print(dataGen.randomChar(str))
+
+     case 11:
+      print("enter the string's length")
+      length = int(input())
+      print(dataGen.randomString(length))
